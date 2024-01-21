@@ -1,0 +1,645 @@
+<html lang="en" class=" " dir="ltr">
+ <head>
+  <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts/index.css">
+  <title>Arbit Finder</title>
+  <meta name="description" content="Arbit Finder the Data Aggregator &amp; Arbitrage Scanner. Find your profit with Arbit Finder">
+  <meta name="keywords" content="arbitfinder,arbit,finder,arbitrage,crypto,trading,trader,marketplace,arbitrage scanner,scanner,coin,gap,coin gap,price difference">
+  <meta name="author" content="ERWIN_SAN">
+  <meta name="cryptomus" content="929aff8e"> 
+  <style>.grecaptcha-badge{visibility:hidden}</style> 
+  <link href="/static/css/main.c3fe4dca.css" rel="stylesheet"> 
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css" data-s=""></style>
+  <link rel="stylesheet" type="text/css" href="/static/css/30.0f639076.chunk.css">
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+ </head>
+ <body>
+  <noscript>
+   You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+   <div class="MuiStack-root css-o44is">
+    <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-13c1xwq">
+<div class="MuiToolbar-root MuiToolbar-regular css-1r0wosx">
+      <div class="MuiContainer-root MuiContainer-maxWidthLg css-1rnec2r">
+       <a href="/"><img src="/logo/logo.svg" alt="website logo" sx="[object Object]" style="height: 60px; width: auto;"></a>
+       <div class="MuiBox-root css-i9gxme"></div>
+       <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-yupws3" tabindex="0" type="button"><span class="MuiTypography-root MuiTypography-button css-1iecic1"> Caranya? </span><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+       <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-yupws3" tabindex="0" type="button"><span class="MuiTypography-root MuiTypography-button css-1iecic1"> Fitur </span><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+       <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-yupws3" tabindex="0" type="button"><span class="MuiTypography-root MuiTypography-button css-1iecic1"> Harga </span><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+       <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="/menu/Arbitrage_Data"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-15ua1m7" tabindex="0" type="button"> Arbitrage List <span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+      </div>
+     </div>
+     <div class="css-1vvlv5q"></div>
+    </header>
+    <main class="MuiBox-root css-1ja9t11">
+     <div class="MuiBox-root css-0">
+      <div class="MuiBox-root css-0">
+       <div class="css-k9go5u">
+        <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+         <div class="MuiStack-root css-1if6xt7">
+          <div class="MuiBox-root css-jz3w5o">
+           <div class="MuiGrid-root MuiGrid-container css-1d3bbye">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1c9vum8">
+             <div role="group" class="MuiToggleButtonGroup-root css-13ymzvo" aria-label="text alignment">
+              <button class="MuiButtonBase-root MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal css-x9nd9a" tabindex="0" type="button" value="id" aria-pressed="true" aria-label="left aligned">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-0 iconify iconify--emojione" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 64 64">
+                <path fill="#f9f9f9" d="M31.8 62c16.6 0 30-13.4 30-30h-60c0 16.6 13.4 30 30 30"></path>
+                <path fill="#ed4c5c" d="M31.8 2c-16.6 0-30 13.4-30 30h60c0-16.6-13.4-30-30-30"></path>
+               </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+              <button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal css-x9nd9a" tabindex="0" type="button" value="en" aria-pressed="false" aria-label="centered">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-0 iconify iconify--circle-flags" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 512 512">
+                <mask id="iconifyReact0">
+                 <circle cx="256" cy="256" r="256" fill="#fff"></circle>
+                </mask>
+                <g mask="url(#iconifyReact0)">
+                 <path fill="#eee" d="m0 0l8 22l-8 23v23l32 54l-32 54v32l32 48l-32 48v32l32 54l-32 54v68l22-8l23 8h23l54-32l54 32h32l48-32l48 32h32l54-32l54 32h68l-8-22l8-23v-23l-32-54l32-54v-32l-32-48l32-48v-32l-32-54l32-54V0l-22 8l-23-8h-23l-54 32l-54-32h-32l-48 32l-48-32h-32l-54 32L68 0z"></path>
+                 <path fill="#0052b4" d="M336 0v108L444 0Zm176 68L404 176h108zM0 176h108L0 68ZM68 0l108 108V0Zm108 512V404L68 512ZM0 444l108-108H0Zm512-108H404l108 108Zm-68 176L336 404v108z"></path>
+                 <path fill="#d80027" d="M0 0v45l131 131h45zm208 0v208H0v96h208v208h96V304h208v-96H304V0zm259 0L336 131v45L512 0zM176 336L0 512h45l131-131zm160 0l176 176v-45L381 336z"></path>
+                </g>
+               </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+             </div>
+            </div> 
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+             <div class="MuiStack-root css-zh4xie">
+              <div style="opacity: 1; transform: none;">
+               <h6 class="MuiTypography-root MuiTypography-h6 css-19dlsh3">Dapatkan &nbsp;<span class="MuiTypography-root MuiTypography-h6 css-1fs3x4s">Keuntungan &nbsp;</span>Dari Selisih Harga Antar Kripto Exchanges</h6>
+               <span class="MuiTypography-root MuiTypography-button css-19rbwfz">Anda juga dapat memonitor Pump&amp;dump hingga spike harga<span class="MuiTypography-root MuiTypography-button css-1j8z0xl">&nbsp; Coin &nbsp;</span>dari<span class="MuiTypography-root MuiTypography-button css-1j8z0xl">&nbsp; Crypto Market &nbsp;</span>dengan ArbitFinder</span>
+               <br>
+               <span class="MuiTypography-root MuiTypography-caption css-176slt">Segala tindakan merupakan tanggung jawab anda dan kami tidak meminta sepeserpun dari keuntungan anda</span>
+               <br>
+               <span class="MuiTypography-root MuiTypography-button css-12sbz4y">* Kami adalah data aggregator dan hanya menginfo selisih harga #BukanRobotTrading *</span>
+              </div>
+             </div>
+             <div class="MuiStack-root css-1owtd4j">
+              <div style="opacity: 1; transform: none;">
+               <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="/menu/Arbitrage_Data"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-3n2dex" tabindex="0" type="button"> Lihat Data <span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+              </div>
+             </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+             <div style="opacity: 1; transform: none;">
+              <span class="MuiTypography-root MuiTypography-caption css-176slt">Arbit Finder ©2023 By: Erwin San</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="MuiBox-root css-m8dnq0"></div>
+      </div>
+      <div class="css-6ipfk0">
+       <div id="how_it_works" class="css-1xafjk0">
+        <div class="MuiContainer-root MuiContainer-maxWidthLg MuiBox-root css-1m9lt6q">
+<div class="MuiStack-root css-5qrv2y">
+          <div class="MuiStack-root css-2nqdp9">
+           <div>
+            <h2 class="MuiTypography-root MuiTypography-h2 css-1dakuqj">Cara kerjanya ?</h2>
+           </div>
+          </div>
+          <div class="MuiStack-root css-2nqdp9">
+           <div>
+            <h6 class="MuiTypography-root MuiTypography-h6 css-19dlsh3">Crypto arbitrage trading adalah jenis strategi perdagangan di mana investor memanfaatkan perbedaan harga aset digital antar beberapa pasar atau tempat jual beli crypto.</h6>
+            <p class="MuiTypography-root MuiTypography-body1 css-wcg0ch">Mengapa manual trading dan bukan bot arbitrage? karena kami mengantisipasi terekspose nya key wallet. Dengan manual arbitrage, maka semua aksi di tangan anda.</p>
+           </div>
+          </div>
+          <div class="MuiStack-root css-1dfnxsa">
+           <img src="/assets/arbitrage_triangle.png">
+           <div>
+            <h5 class="MuiTypography-root MuiTypography-h5 css-1lyft6k">Bagaimana cara mengetahui selisih koin apa dan di market mana ? anda dapat menemukannya dengan ArbitFinder</h5>
+            <p class="MuiTypography-root MuiTypography-body1 css-wcg0ch">Arbit Finder adalah data aggregator seperti Coinmarketcap tetapi kami mencari selisih koin antar market dan memberi perhitungan serta data orderbook pada market. Untuk info lebih lanjut silahkan tonton video berikut.</p>
+           </div>
+           <div>
+            <div class="video-responsive">
+             <iframe width="320" height="320" src="https://www.youtube.com/embed/EEfH-H_M7EM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Embedded youtube"></iframe>
+            </div>
+            <div class="video-responsive">
+             <iframe width="320" height="320" src="https://www.youtube.com/embed/5hIlh6drvh0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Embedded youtube"></iframe>
+            </div>
+           </div>
+           <div>
+            <h6 class="MuiTypography-root MuiTypography-h6 css-19dlsh3">Check Youtube kami untuk Info &amp; Tutorial lainnya</h6>
+            <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="https://www.youtube.com/@ArbitFinderOfficial" target="_blank"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-10ygcul" tabindex="0" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-2odlse iconify iconify--ant-design" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 1024 1024">
+               <path fill="currentColor" d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9M423 646V378l232 133z"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+           </div>
+          </div>
+          <div class="MuiStack-root css-hfspt9">
+           <div>
+            <span class="MuiTypography-root MuiTypography-overline css-1vf08mn">List exchange yang kami dukung :</span>
+           </div>
+           <div class="MuiStack-root css-gnj79o">
+            <img src="/assets/exchange/indodax.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/tokocrypto.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/binance.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+<img src="/assets/exchange/okx.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/bybit.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/bitget.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/kucoin.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/huobi.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/gateio.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/mexc.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+            <img src="/assets/exchange/bitmart.jpg" style="width: 50px; height: 50px; margin-top: 10px;">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div id="feature" class="css-1ja9t11">
+        <div class="MuiContainer-root MuiContainer-maxWidthLg MuiBox-root css-1m9lt6q">
+         <div class="MuiStack-root css-17e6frd">
+          <div class="MuiStack-root css-2nqdp9">
+           <div>
+            <h2 class="MuiTypography-root MuiTypography-h2 css-1dakuqj">Fitur</h2>
+           </div>
+           <div>
+            <h5 class="MuiTypography-root MuiTypography-h5 css-1lyft6k">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-15izekx iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+              <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+             </svg> Data real time(selalu diupdate)</h5>
+            <h5 class="MuiTypography-root MuiTypography-h5 css-1lyft6k">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-15izekx iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+              <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+             </svg> Filter data</h5>
+            <h5 class="MuiTypography-root MuiTypography-h5 css-1lyft6k">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-15izekx iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+              <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+             </svg> Mudah digunakan</h5>
+           </div>
+           <div>
+            <div class="MuiStack-root css-2nqdp9">
+             <span class="MuiBox-root css-1s8128x"><span class="wrapper lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block;"><img class="MuiBox-root css-6jrdpz" alt="sketch icon" src="/assets/feature1.png"></span></span>
+            </div>
+           </div>
+           <div>
+            <div class="MuiStack-root css-2nqdp9">
+             <span class="MuiBox-root css-1s8128x"><span class="wrapper lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block;"><img class="MuiBox-root css-6jrdpz" alt="sketch icon" src="/assets/feature2.png"></span></span>
+            </div>
+           </div>
+           <div>
+            <div class="MuiStack-root css-2nqdp9">
+             <span class="MuiBox-root css-1s8128x"><span class="wrapper lazy-load-image-background blur lazy-load-image-loaded" style="color: transparent; display: inline-block;"><img class="MuiBox-root css-6jrdpz" alt="sketch icon" src="/assets/feature3.png"></span></span>
+</div>
+           </div>
+          </div>
+          <div class="MuiStack-root css-hfspt9">
+           <div>
+            <h2 class="MuiTypography-root MuiTypography-h2 css-1dakuqj">Cara memulai</h2>
+           </div>
+           <div>
+            <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-a68g9b">
+             <div class="MuiBox-root css-sg5xyc">
+              <span class="MuiTypography-root MuiTypography-button css-19rbwfz">1. Register pada beberapa exchange yang didukung ArbitFinder.</span>
+              <br>
+              <span class="MuiTypography-root MuiTypography-button css-19rbwfz">2. Register pada ArbitFinder &amp; login (anda menjadi Free User dengan beberapa keterbatasan)</span>
+              <br>
+              <span class="MuiTypography-root MuiTypography-button css-19rbwfz">3. Klik icon avatar pada bagian atas , lalu klik Profile</span>
+              <img src="/assets/tutorial_account_popover.jpg" style="width: 50%;">
+              <br>
+              <span class="MuiTypography-root MuiTypography-button css-19rbwfz">4. Pilih membership sesuai keinginan anda.</span>
+              <img src="/assets/tutorial_pricing.png" style="width: 100%;">
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div id="pricing" class="css-1serspn">
+        <div class="MuiContainer-root MuiContainer-maxWidthLg MuiBox-root css-1m9lt6q">
+         <div class="MuiBox-root css-h3csse">
+          <h2 class="MuiTypography-root MuiTypography-h2 css-ja6org">Perhatian!</h2>
+          <div class="MuiBox-root css-1ebprri">
+           <span class="MuiTypography-root MuiTypography-button css-tu8qo5">Kami hanyalah data aggregator. BUKAN berarti dengan app ini anda PASTI 100% profit, Tetapi kami memberi info untuk memperbesar kemungkinan profit.</span>
+          </div>
+          <div class="MuiBox-root css-1ebprri">
+           <span class="MuiTypography-root MuiTypography-button css-tu8qo5">Banyak dari kita mengetahui kejadian LUNA &amp; GALA setelah menjadi berita, Tetapi kami bisa profit saat kejadian itu terjadi (Realtime) dengan ArbitFinder ini.</span>
+          </div>
+          <div class="MuiBox-root css-1ebprri">
+           <span class="MuiTypography-root MuiTypography-button css-tu8qo5">Memungkinkan adanya perbedaan jaringan koin antar Exchanges , Data tetap ditampilkan agar anda tetap bisa memonitor adanya Pump &amp; Dump.</span>
+          </div>
+          <div class="MuiBox-root css-1ebprri">
+           <span class="MuiTypography-root MuiTypography-button css-tu8qo5">Cek likuiditas koin, Kroscek semua transaksi yang akan anda lakukan dan DYOR.</span>
+          </div>
+         </div>
+         <div class="MuiBox-root css-esyzgm">
+          <div>
+           <h2 class="MuiTypography-root MuiTypography-h2 css-1ql2m9u">Pilih plan terbaik untuk anda</h2>
+          </div>
+          <div>
+           <p class="MuiTypography-root MuiTypography-body1 css-83usnd">Dukungan anda sangat berarti bagi kami untuk mengembangkan lebih banyak fitur dan informasi untuk anda.</p>
+          </div>
+         </div>
+         <div class="MuiBox-root css-19midj6">
+          <div>
+           <span class="MuiTypography-root MuiTypography-button css-12sbz4y">*) Please relog after payment to refresh profile AND Please see this video to avoid misunderstanding (<a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="https://youtu.be/5hIlh6drvh0?si=hUPVP3WobfevHKtl" target="_blank">Common Arbitrage Mistake</a>)</span>
+           <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-cpvb7c">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-18tn63a">
+<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-19gt0pt">
+              <div class="MuiStack-root css-36lwkk">
+               <div>
+                <div class="MuiTypography-root MuiTypography-overline css-19csitk">
+                 PLAN
+                </div>
+                <h6 class="MuiTypography-root MuiTypography-h6 css-1byjju7">Free Package</h6>
+               </div> 
+               <div class="MuiStack-root css-1qvrhbk">
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Limited Arbitrage Data</p>
+                </div>
+                <hr class="MuiDivider-root MuiDivider-fullWidth css-zg4d8h">
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Get realtime current data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Market Order Book</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Coin Full Name</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+</svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Network Chain</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Withdrawal Fee</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Wallet WD/DEPO availability</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1e4lzc2 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Filter data</p>
+                </div>
+               </div>
+               <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth Mui-disabled MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth css-3edd51" tabindex="-1" type="button" disabled>Currenly Here</button>
+              </div>
+             </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-18tn63a">
+             <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-kxqfi">
+              <div class="MuiStack-root css-36lwkk">
+               <div>
+                <div class="MuiTypography-root MuiTypography-overline css-19csitk">
+                 PLAN
+                </div>
+                <h6 class="MuiTypography-root MuiTypography-h6 css-1byjju7">Premium +1 month</h6>
+               </div>
+               <div class="MuiStack-root css-u0mlav">
+                <span class="MuiTypography-root MuiTypography-button css-6dr1u8">IDR 150.000 (USD 10) &nbsp;</span>
+               </div>
+               <div class="MuiStack-root css-1qvrhbk">
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+<path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">+1 month arbitrage data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Get realtime current data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Market Order Book</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Coin Full Name</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Network Chain</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Withdrawal Fee</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+<path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Wallet WD/DEPO availability</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Filter data</p>
+                </div>
+                <hr class="MuiDivider-root MuiDivider-fullWidth css-zg4d8h">
+               </div>
+               <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-bd5u1t" tabindex="0" type="button">Choose plan<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+              </div>
+             </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-18tn63a">
+             <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1owvpjv">
+              <div class="MuiStack-root css-36lwkk">
+               <div>
+                <div class="MuiTypography-root MuiTypography-overline css-19csitk">
+                 PLAN
+                </div>
+                <h6 class="MuiTypography-root MuiTypography-h6 css-1byjju7">Premium +3 month</h6>
+               </div>
+               <div class="MuiStack-root css-u0mlav">
+                <div class="MuiBox-root css-192471a">
+                 <span class="MuiTypography-root MuiTypography-button css-1coa3qh">Discount</span>
+                </div>
+                <span class="MuiTypography-root MuiTypography-overline css-aknvgp">IDR 450.000 &nbsp;</span>
+                <span class="MuiTypography-root MuiTypography-button css-6dr1u8">IDR 400.000 (USD 28) &nbsp;</span>
+               </div>
+               <div class="MuiStack-root css-1qvrhbk">
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">+3 month arbitrage data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Get realtime of current data</p>
+</div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Market Order Book</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Coin Full Name</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Network Chain</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Withdrawal Fee</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Wallet WD/DEPO availability</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+<p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Filter data</p>
+                </div>
+                <hr class="MuiDivider-root MuiDivider-fullWidth css-zg4d8h">
+               </div>
+               <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-bd5u1t" tabindex="0" type="button">Choose plan<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+              </div>
+             </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-18tn63a">
+             <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-2mxalg">
+              <div class="MuiStack-root css-36lwkk">
+               <div>
+                <div class="MuiTypography-root MuiTypography-overline css-19csitk">
+                 PLAN
+                </div>
+                <h6 class="MuiTypography-root MuiTypography-h6 css-1byjju7">Premium +1 Year</h6>
+               </div>
+               <div class="MuiStack-root css-u0mlav">
+                <div class="MuiBox-root css-192471a">
+                 <span class="MuiTypography-root MuiTypography-button css-1coa3qh">Discount</span>
+                </div>
+                <span class="MuiTypography-root MuiTypography-overline css-aknvgp">IDR 1.800.000 &nbsp;</span>
+                <span class="MuiTypography-root MuiTypography-button css-6dr1u8">IDR 900.000 (USD 69) &nbsp;</span>
+               </div>
+               <div class="MuiStack-root css-1qvrhbk">
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">+12 month arbitrage data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Get realtime of current data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Market Order Book</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+<path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Coin Full Name</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">View Network Chain</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Withdrawal Fee</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Wallet WD/DEPO availability</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Filter data</p>
+                </div>
+                <div class="MuiStack-root css-1kywmkw">
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-44cv99 iconify iconify--eva" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"></path>
+                 </svg>
+                 <p class="MuiTypography-root MuiTypography-body2 css-11tkeh1">Additional tutorial &amp; guidance</p>
+                </div>
+                <hr class="MuiDivider-root MuiDivider-fullWidth css-zg4d8h">
+               </div>
+               <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-bd5u1t" tabindex="0" type="button">Choose plan<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+</div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div id="pricing" class="css-ob544f">
+        <div class="MuiBox-root css-1syuip">
+         <span class="MuiTypography-root MuiTypography-button css-19rbwfz">Ada pertanyaan?</span>
+         <br>
+         <a class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-sz5zvx" tabindex="0" href="https://t.me/ArbitFinderAdmin">Hubungi kami<span class="MuiTouchRipple-root css-w0pj6f"></span></a>
+        </div>
+        <div class="MuiContainer-root MuiContainer-maxWidthLg MuiBox-root css-1m9lt6q">
+         <div class="MuiGrid-root MuiGrid-container css-1d3bbye">
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 css-153mbwb">
+           <div>
+            <h6 class="MuiTypography-root MuiTypography-h6 css-1rukwjf">Selalu Terhubung Dengan Kami Melalui</h6>
+           </div>
+           <div>
+            <div class="MuiStack-root css-17if2r5">
+             <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="https://www.youtube.com/@ArbitFinderOfficial" target="_blank"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-10ygcul" tabindex="0" type="button">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-2odlse iconify iconify--ant-design" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 1024 1024">
+                <path fill="currentColor" d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9M423 646V378l232 133z"></path>
+               </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+             <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="https://t.me/ArbitFinderAdmin"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-10ygcul" tabindex="0" type="button">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1u7uhqd iconify iconify--logos" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 256 256">
+                <defs>
+                 <lineargradient id="iconifyReact1" x1="50%" x2="50%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#2AABEE"></stop>
+                  <stop offset="100%" stop-color="#229ED9"></stop>
+                 </lineargradient>
+                </defs>
+                <path fill="url(#iconifyReact1)" d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0"></path>
+                <path fill="#FFF" d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072"></path>
+</svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+             <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="https://www.instagram.com/arbitfinder.official/" target="_blank"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-10ygcul" tabindex="0" type="button">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1u7uhqd iconify iconify--skill-icons" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 256 256">
+                <g fill="none">
+                 <rect width="256" height="256" fill="url(#iconifyReact2)" rx="60"></rect>
+                 <rect width="256" height="256" fill="url(#iconifyReact3)" rx="60"></rect>
+                 <path fill="#fff" d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396c0 26.688-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413c0-26.704.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5c3.5-3.5 6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355c0 28.361 22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334c-18.41 0-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334"></path>
+                 <defs>
+                  <radialgradient id="iconifyReact2" cx="0" cy="0" r="1" gradienttransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientunits="userSpaceOnUse">
+                   <stop stop-color="#FD5"></stop>
+                   <stop offset=".1" stop-color="#FD5"></stop>
+                   <stop offset=".5" stop-color="#FF543E"></stop>
+                   <stop offset="1" stop-color="#C837AB"></stop>
+                  </radialgradient>
+                  <radialgradient id="iconifyReact3" cx="0" cy="0" r="1" gradienttransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)" gradientunits="userSpaceOnUse">
+                   <stop stop-color="#3771C8"></stop>
+                   <stop offset=".128" stop-color="#3771C8"></stop>
+<stop offset="1" stop-color="#60F" stop-opacity="0"></stop>
+                  </radialgradient>
+                 </defs>
+                </g>
+               </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+            </div>
+           </div>
+          </div>
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 css-153mbwb">
+           <div>
+            <h4 class="MuiTypography-root MuiTypography-h4 css-sko12q">Tim Kami</h4>
+           </div>
+           <div>
+            <div class="MuiStack-root css-17if2r5">
+             <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="https://www.linkedin.com/in/erwin-sanjaya-7a2733169/" target="_blank"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-10ygcul" tabindex="0" type="button">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="MuiBox-root css-1u7uhqd iconify iconify--devicon" width="1em" height="1em" preserveaspectratio="xMidYMid meet" viewbox="0 0 128 128">
+                <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3"></path>
+                <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
+               </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a>
+            </div>
+           </div>
+          </div>
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 css-lh7a38">
+           <div>
+            <span class="MuiTypography-root MuiTypography-button css-19rbwfz">See our <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="/Privacy_Policy">Privacy Policy</a>. </span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="MuiBox-root css-xi606m">
+         <span class="MuiTypography-root MuiTypography-caption css-176slt">Arbit Finder ©2023 By: Erwin San</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </main>
+   </div>
+   <div style="position: fixed; bottom: 0px; left: 0px; width: 100%; background-color: rgb(240, 240, 240); padding: 2px; text-align: center; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;">
+    <span class="MuiTypography-root MuiTypography-caption css-176slt">By using this website , you agree to our use of cookies in our <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-jsdiea" href="/Privacy_Policy">Privacy Policy</a>. </span>
+    <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-bd5u1t" tabindex="0" type="button">Ok<span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+   </div>
+  </div>
+  <div>
+   <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+    <div class="grecaptcha-logo">
+     <iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-g3gmyjdcm4lf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdI2i8nAAAAAPXvCmnJzDJrKZGoNjgiKT25Oi-a&amp;co=aHR0cHM6Ly9hcmJpdGZpbmRlci5teS5pZDo0NDM.&amp;hl=en&amp;v=Ya-Cd6PbRI5ktAHEhm9JuKEu&amp;size=invisible&amp;cb=eyad5wo7ssmz"></iframe>
+    </div>
+    <div class="grecaptcha-error"></div>
+    <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+   </div>
+   <iframe style="display: none;"></iframe>
+  </div>
+  <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled">
+   <div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
+    <iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9197834342456933&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1705744620&amp;plat=1%3A16777216%2C2%3A16777216%2C3%3A65536%2C4%3A65536%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Farbitfinder.my.id%2F&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1~2~4~6&amp;aslcwct=150&amp;asacwct=25&amp;uach=WyJBbmRyb2lkIiwiMTIuMC4wIiwiIiwiMjIwMTExN1NHIiwiMTIwLjAuNjA5OS4yMzAiLG51bGwsMSxudWxsLCIiLFtbIk5vdF9BIEJyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMjAuMC42MDk5LjIzMCJdLFsiQW5kcm9pZCBXZWJWaWV3IiwiMTIwLjAuNjA5OS4yMzAiXV0sMF0.&amp;dt=1705872538768&amp;bpp=7&amp;bdt=11586&amp;idt=17067&amp;shv=r20240118&amp;mjsv=m202401170101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=1423035821616&amp;frm=20&amp;pv=2&amp;ga_vid=868519482.1705847746&amp;ga_sid=1705872556&amp;ga_hid=854483285&amp;ga_fc=1&amp;u_tz=120&amp;u_his=2&amp;u_h=873&amp;u_w=393&amp;u_ah=873&amp;u_aw=393&amp;u_cd=24&amp;u_sd=2.75&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=393&amp;bih=705&amp;scr_x=0&amp;scr_y=4937&amp;eid=95320239%2C44759876%2C44759927%2C31080557%2C95322184%2C95320888%2C95321626%2C95321861%2C95321966%2C95322163&amp;oid=2&amp;pvsid=970488200952317&amp;tmod=758120560&amp;uas=1&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C393%2C0%2C393%2C705%2C393%2C705&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=17105" data-google-container-id="a!1" data-load-complete="true"></iframe>
+   </div></ins>
+  <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20240118/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe>
+ </body>
+</html>
